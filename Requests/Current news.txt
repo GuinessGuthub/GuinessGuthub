@@ -1,44 +1,58 @@
-<h1>Welcome To CreTX App</h1>
-<h3>Here You Can Get Access You Your Favourite
-<br/><span style="color:green">Games , Apps, Movies Etc.</span>
-<br/><br/>Thanks For Showing Interest This Is Initial Release
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Number Guessing Game</title>
+<title>Welcome To CreTX App</title>
 <style>
   body {
-    text-align: center;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .thanks {
+    margin-top: 20px;
+    color: #888;
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slide-up {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
 </style>
 </head>
 <body>
-<h1>Number Guessing Game</h1>
-<p>Guess a number between 1 and 100:</p>
-<input type="number" id="guess" min="1" max="100">
-<button onclick="checkGuess()">Check</button>
-<p id="message"></p>
-
-<script>
-  // Generate a random number between 1 and 100
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
-  let numberOfTries = 0;
-
-  function checkGuess() {
-    const guess = parseInt(document.getElementById("guess").value);
-    numberOfTries++;
-
-    if (guess === randomNumber) {
-      document.getElementById("message").textContent = `Congratulations! You guessed the number ${randomNumber} in ${numberOfTries} tries.`;
-      document.getElementById("guess").disabled = true;
-    } else if (guess < randomNumber) {
-      document.getElementById("message").textContent = "Try a higher number.";
-    } else {
-      document.getElementById("message").textContent = "Try a lower number.";
-    }
-  }
-</script>
+<div class="container">
+  <h1>Welcome To CreTX App</h1>
+  <p>Here You Can Get Access To Your Favorite<br>Games, Apps, Movies, and More.</p>
+  <p>This is the Initial Release.</p>
+</div>
+<div class="thanks">
+  <p>Thanks For Showing Interest!</p>
+</div>
 </body>
 </html>
