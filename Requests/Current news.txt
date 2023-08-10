@@ -24,6 +24,7 @@
   align-items: center;
   margin-bottom: 8px;
 }
+</style>
 
 .notification-content {
   font-size: 14px;
