@@ -5,59 +5,35 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
+    background-color: #f5f5f5;
     text-align: center;
     padding: 20px;
     margin: 0;
   }
   
   .container {
-    background-color: #333;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    color: white;
-    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
-    color: #ff9900;
+    color: #333;
   }
   
   p {
-    color: #ccc;
-    margin: 10px 0;
+    color: #666;
   }
   
   .thanks {
     margin-top: 20px;
-    color: #aaa;
+    color: #888;
   }
 </style>
-<script>
-  let isFullscreen = false;
-
-  function toggleFullscreen() {
-    const container = document.querySelector('.container');
-    if (!isFullscreen) {
-      container.style.position = 'fixed';
-      container.style.top = '0';
-      container.style.left = '0';
-      container.style.width = '100vw';
-      container.style.height = '100vh';
-      container.style.borderRadius = '0';
-    } else {
-      container.style.position = 'static';
-      container.style.width = 'auto';
-      container.style.height = 'auto';
-      container.style.borderRadius = '10px';
-    }
-    isFullscreen = !isFullscreen;
-  }
-</script>
 </head>
 <body>
-<div class="container" onclick="toggleFullscreen()">
+<div class="container">
   <h1>Welcome To CreTX App</h1>
   <p>Here You Can Get Access To Your Favorite<br>Games, Apps, Movies, and More.</p>
   <p>This is the Initial Release.</p>
