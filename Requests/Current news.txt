@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome To CreTX App</title>
+<div class="notification-card">
+  <div class="notification-header">
+    <h2>New Update Available</h2>
+    <p>Aug 10, 2023</p>
+  </div>
+  <div class="notification-content">
+    <p>A new version of the app is now available. Click below to update.</p>
+    <button class="update-button">Update Now</button>
+  </div>
+</div>
+
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-  }
-  
-  .container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  .thanks {
-    margin-top: 20px;
-    color: #888;
-  }
-</style>
-</head>
-<body>
-<div class="container">
-  <h1>Welcome To CreTX App</h1>
-  <p>Here You Can Get Access To Your Favorite<br>Games, Apps, Movies, and More.</p>
-  <p>This is the Initial Release.</p>
-</div>
-<div class="thanks">
-  <p>Thanks For Showing Interest!</p>
-</div>
-</body>
-</html>
+.notification-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f7f7f7;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.notification-content {
+  font-size: 14px;
+}
+
+.update-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
