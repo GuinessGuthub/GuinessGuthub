@@ -1,5 +1,8 @@
 <h1>Coming Soon......</h1>
 <style>
+* {
+background-color:black;
+}
 h1 {
 color:white;
 }
